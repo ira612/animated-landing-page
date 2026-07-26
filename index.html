@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaAI — Automate the Busywork with AI</title>
+  <meta name="description" content="NovaAI helps businesses automate repetitive work using Artificial Intelligence. Connect your tools, automate workflows, and grow faster.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="logo">
+        <svg class="logo__mark" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="34" height="34" rx="9" fill="url(#logoGradient)"/>
+          <path d="M10 23V11L24 23V11" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logoGradient" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4F46E5"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo__text">Nova<span class="logo__accent">AI</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--ghost">Log In</a>
+        <a href="#cta" class="btn btn--primary">Get Started</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features" class="mobile-menu__link">Features</a>
+    <a href="#how-it-works" class="mobile-menu__link">How It Works</a>
+    <a href="#pricing" class="mobile-menu__link">Pricing</a>
+    <a href="#testimonials" class="mobile-menu__link">Testimonials</a>
+    <div class="mobile-menu__actions">
+      <a href="#" class="btn btn--ghost">Log In</a>
+      <a href="#cta" class="btn btn--primary">Get Started</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__shape hero__shape--1"></div>
+    <div class="hero__shape hero__shape--2"></div>
+    <div class="hero__shape hero__shape--3"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content fade-in">
+        <span class="badge">✨ AI-Powered Business Automation</span>
+        <h1 class="hero__title">Automate the busywork.<br>Focus on <span class="text-gradient">what matters.</span></h1>
+        <p class="hero__subtitle">
+          NovaAI connects your tools and uses artificial intelligence to handle repetitive tasks —
+          so your team can spend time on the work that actually grows your business.
+        </p>
+        <div class="hero__ctas">
+          <a href="#cta" class="btn btn--primary btn--lg">Get Started Free</a>
+          <a href="#how-it-works" class="btn btn--outline btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7L8 5z" fill="currentColor"/></svg>
+            Watch Demo
+          </a>
+        </div>
+        <div class="hero__meta">
+          <div class="avatar-stack">
+            <span class="avatar-dot" style="background:#4F46E5;">JM</span>
+            <span class="avatar-dot" style="background:#06B6D4;">SK</span>
+            <span class="avatar-dot" style="background:#818CF8;">RT</span>
+          </div>
+          <p>Trusted by <strong>250+</strong> growing teams</p>
+        </div>
+      </div>
+
+      <div class="hero__visual float">
+        <svg viewBox="0 0 480 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <!-- dashboard card -->
+          <rect x="60" y="40" width="360" height="260" rx="18" fill="#FFFFFF" stroke="#E5E7EB"/>
+          <rect x="60" y="40" width="360" height="46" rx="18" fill="url(#panelHead)"/>
+          <circle cx="86" cy="63" r="5" fill="#fff" opacity="0.85"/>
+          <circle cx="104" cy="63" r="5" fill="#fff" opacity="0.6"/>
+          <circle cx="122" cy="63" r="5" fill="#fff" opacity="0.4"/>
+
+          <!-- bars chart -->
+          <rect x="90" y="180" width="26" height="80" rx="6" fill="#C7D2FE"/>
+          <rect x="130" y="150" width="26" height="110" rx="6" fill="#818CF8"/>
+          <rect x="170" y="120" width="26" height="140" rx="6" fill="#4F46E5"/>
+          <rect x="210" y="160" width="26" height="100" rx="6" fill="#818CF8"/>
+          <rect x="250" y="100" width="26" height="160" rx="6" fill="#4F46E5"/>
+
+          <!-- AI node line -->
+          <path d="M300 220 C 330 180, 360 240, 390 190" stroke="#06B6D4" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="300" cy="220" r="6" fill="#06B6D4"/>
+          <circle cx="345" cy="205" r="6" fill="#4F46E5"/>
+          <circle cx="390" cy="190" r="6" fill="#06B6D4"/>
+
+          <!-- floating chip cards -->
+          <g class="pulse-slow">
+            <rect x="20" y="290" width="140" height="66" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <circle cx="48" cy="323" r="14" fill="#EEF2FF"/>
+            <path d="M42 323l4 4 8-9" stroke="#4F46E5" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="72" y="313" width="70" height="8" rx="4" fill="#E5E7EB"/>
+            <rect x="72" y="328" width="50" height="8" rx="4" fill="#E5E7EB"/>
+          </g>
+
+          <g class="pulse-slow" style="animation-delay:1s">
+            <rect x="330" y="300" width="130" height="60" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <circle cx="356" cy="330" r="13" fill="#ECFEFF"/>
+            <path d="M350 330 L356 336 L364 324" stroke="#06B6D4" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="378" y="320" width="60" height="8" rx="4" fill="#E5E7EB"/>
+            <rect x="378" y="335" width="40" height="8" rx="4" fill="#E5E7EB"/>
+          </g>
+
+          <defs>
+            <linearGradient id="panelHead" x1="60" y1="40" x2="420" y2="86" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4F46E5"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUSTED COMPANIES ===================== -->
+  <section class="trusted">
+    <div class="container">
+      <p class="trusted__label">Trusted by teams at</p>
+      <div class="trusted__grid">
+        <div class="trusted__card">Google</div>
+        <div class="trusted__card">Microsoft</div>
+        <div class="trusted__card">OpenAI</div>
+        <div class="trusted__card">Amazon</div>
+        <div class="trusted__card">Spotify</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Everything you need to automate work</h2>
+        <p>Purpose-built AI tools that plug into how your team already works.</p>
+      </div>
+
+      <div class="features__grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z" fill="#4F46E5"/></svg>
+          </div>
+          <h3>Smart Workflow Automation</h3>
+          <p>Build multi-step automations that trigger on real events — no code, no waiting on engineering.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z" stroke="#06B6D4" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="#06B6D4" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Natural Language AI</h3>
+          <p>Tell NovaAI what you need in plain English, and it configures the automation for you.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M12 20V4M20 20v-7" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Real-Time Analytics</h3>
+          <p>Track exactly how much time and money each automation saves, updated live.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="#06B6D4" stroke-width="1.8"/><path d="M12 2v3M12 19v3M22 12h-3M5 12H2M19 5l-2 2M7 17l-2 2M19 19l-2-2M7 7L5 5" stroke="#06B6D4" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Seamless Integrations</h3>
+          <p>Connect the tools you already use — from spreadsheets to CRMs — in a few clicks.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#4F46E5" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Enterprise-Grade Security</h3>
+          <p>SOC 2-ready infrastructure with encryption at rest and in transit, by default.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#06B6D4" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#06B6D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>24/7 AI Support</h3>
+          <p>An AI support agent that actually knows your account, awake around the clock.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATISTICS ===================== -->
+  <section class="stats" id="stats">
+    <div class="container stats__grid">
+      <div class="stat-card reveal">
+        <h3 class="stat-number" data-target="1000" data-suffix="+">0</h3>
+        <p>Projects Automated</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3 class="stat-number" data-target="250" data-suffix="+">0</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3 class="stat-number" data-target="99" data-suffix="%">0</h3>
+        <p>Success Rate</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3 class="stat-number stat-number--static">24/7</h3>
+        <p>Support Available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>Three steps to automated growth</h2>
+        <p>Most teams are live with their first automation in under a day.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step-card reveal">
+          <div class="step-card__number">01</div>
+          <h3>Connect</h3>
+          <p>Link your existing tools — email, CRM, spreadsheets, and more — in a few clicks.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-card__number">02</div>
+          <h3>Automate</h3>
+          <p>Describe the task in plain English, and NovaAI builds the automation for you.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-card__number">03</div>
+          <h3>Grow</h3>
+          <p>Reinvest the hours you save into the work that actually moves your business forward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>Loved by fast-moving teams</h2>
+        <p>Here's what our customers say after switching to NovaAI.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"NovaAI took over our onboarding emails and data entry. We got back roughly ten hours a week in the first month."</p>
+          <div class="testimonial-card__author">
+            <span class="avatar-dot" style="background:#4F46E5;">AR</span>
+            <div>
+              <strong>Ayesha Raza</strong>
+              <span>Operations Lead, Fintrack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Setup took an afternoon, not a sprint. The natural language builder is genuinely the easiest automation tool we've used."</p>
+          <div class="testimonial-card__author">
+            <span class="avatar-dot" style="background:#06B6D4;">DK</span>
+            <div>
+              <strong>Daniel Kim</strong>
+              <span>Founder, Brightloop</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Support actually understands our setup instead of reading from a script. That alone was worth switching for."</p>
+          <div class="testimonial-card__author">
+            <span class="avatar-dot" style="background:#818CF8;">MS</span>
+            <div>
+              <strong>Maria Santos</strong>
+              <span>Head of CX, Loopwave</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Simple pricing that scales with you</h2>
+        <p>Start free. Upgrade when your automations start paying for themselves.</p>
+      </div>
+
+      <div class="pricing__grid">
+        <div class="pricing-card reveal">
+          <h3>Starter</h3>
+          <p class="pricing-card__desc">For individuals testing the waters.</p>
+          <div class="pricing-card__price"><span>$0</span>/mo</div>
+          <ul class="pricing-card__features">
+            <li>Up to 3 automations</li>
+            <li>1,000 AI actions / month</li>
+            <li>Community support</li>
+            <li>Basic analytics</li>
+          </ul>
+          <a href="#" class="btn btn--outline btn--full">Start Free</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <span class="pricing-card__badge">Most Popular</span>
+          <h3>Professional</h3>
+          <p class="pricing-card__desc">For growing teams that automate daily.</p>
+          <div class="pricing-card__price"><span>$49</span>/mo</div>
+          <ul class="pricing-card__features">
+            <li>Unlimited automations</li>
+            <li>50,000 AI actions / month</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+            <li>Team collaboration</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h3>Enterprise</h3>
+          <p class="pricing-card__desc">For organizations with custom needs.</p>
+          <div class="pricing-card__price"><span>Custom</span></div>
+          <ul class="pricing-card__features">
+            <li>Unlimited everything</li>
+            <li>Dedicated account manager</li>
+            <li>Custom integrations</li>
+            <li>SLA & 24/7 support</li>
+          </ul>
+          <a href="#" class="btn btn--outline btn--full">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta" id="cta">
+    <div class="cta__circle cta__circle--1"></div>
+    <div class="cta__circle cta__circle--2"></div>
+    <div class="cta__circle cta__circle--3"></div>
+    <div class="container cta__inner reveal">
+      <h2>Ready to automate your busywork?</h2>
+      <p>Join hundreds of teams already saving hours every week with NovaAI.</p>
+      <a href="#" class="btn btn--white btn--lg">Get Started Free</a>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo">
+          <svg class="logo__mark" width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="9" fill="url(#footerLogoGradient)"/>
+            <path d="M10 23V11L24 23V11" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="footerLogoGradient" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F46E5"/><stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo__text">Nova<span class="logo__accent">AI</span></span>
+        </a>
+        <p>AI-powered automation for teams that would rather grow than do repetitive work.</p>
+        <p class="footer__email">hello@novaai.example</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+      </div>
+
+      <div class="footer__links">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer__social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 00-7 3.7A11.6 11.6 0 013 4.9a4.1 4.1 0 001.3 5.5c-.6 0-1.2-.2-1.7-.5v.1c0 2 1.4 3.6 3.3 4a4.2 4.2 0 01-1.9.1 4.1 4.1 0 003.9 2.9A8.3 8.3 0 012 18.6a11.6 11.6 0 006.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.5 8.65 22 11 22 14v7h-4v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21h-4V9z"/></svg></a>
+          <a href="#" aria-label="GitHub" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-2 1.03-2.7-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.4 9.4 0 015 0c1.9-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.66.64.7 1.03 1.6 1.03 2.7 0 3.85-2.34 4.7-4.57 4.94.36.32.68.94.68 1.9v2.82c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg></a>
+          <a href="#" aria-label="Instagram" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm0 2A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4h-9zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.3-3.2a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 NovaAI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
