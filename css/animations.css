@@ -1,0 +1,99 @@
+/* =========================================================
+   NovaAI — Animations
+   Keyframes + scroll-reveal helper classes.
+   Used sparingly and only where it reinforces the content.
+   ========================================================= */
+
+/* ---------- Keyframes ---------- */
+
+@keyframes fadeIn{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+
+@keyframes slideUp{
+  from{ opacity: 0; transform: translateY(40px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float{
+  0%, 100%{ transform: translateY(0); }
+  50%{ transform: translateY(-16px); }
+}
+
+@keyframes pulse{
+  0%, 100%{ transform: scale(1); opacity: 1; }
+  50%{ transform: scale(1.05); opacity: 0.85; }
+}
+
+@keyframes gradientShift{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+
+@keyframes bounce{
+  0%, 100%{ transform: translateY(0); }
+  50%{ transform: translateY(-22px); }
+}
+
+/* ---------- Utility animation classes ---------- */
+
+.fade-in{
+  animation: fadeIn 1s ease both;
+}
+
+.float{
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-slow{
+  animation: pulse 3.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* ---------- Scroll reveal (driven by Intersection Observer in script.js) ----------
+   Uses the slideUp keyframe directly (rather than a plain transition) so the
+   required animation is genuinely in play, not just declared. */
+.reveal{
+  opacity: 0;
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  animation: slideUp 0.7s ease forwards;
+}
+
+/* Stagger children of grids that reveal together */
+.features__grid .feature-card:nth-child(1).is-visible{ animation-delay: 0s; }
+.features__grid .feature-card:nth-child(2).is-visible{ animation-delay: 0.08s; }
+.features__grid .feature-card:nth-child(3).is-visible{ animation-delay: 0.16s; }
+.features__grid .feature-card:nth-child(4).is-visible{ animation-delay: 0.24s; }
+.features__grid .feature-card:nth-child(5).is-visible{ animation-delay: 0.32s; }
+.features__grid .feature-card:nth-child(6).is-visible{ animation-delay: 0.4s; }
+
+.testimonials__grid .testimonial-card:nth-child(1).is-visible{ animation-delay: 0s; }
+.testimonials__grid .testimonial-card:nth-child(2).is-visible{ animation-delay: 0.1s; }
+.testimonials__grid .testimonial-card:nth-child(3).is-visible{ animation-delay: 0.2s; }
+
+.pricing__grid .pricing-card:nth-child(1).is-visible{ animation-delay: 0s; }
+.pricing__grid .pricing-card:nth-child(2).is-visible{ animation-delay: 0.1s; }
+.pricing__grid .pricing-card:nth-child(3).is-visible{ animation-delay: 0.2s; }
+
+.stats__grid .stat-card:nth-child(1).is-visible{ animation-delay: 0s; }
+.stats__grid .stat-card:nth-child(2).is-visible{ animation-delay: 0.1s; }
+.stats__grid .stat-card:nth-child(3).is-visible{ animation-delay: 0.2s; }
+.stats__grid .stat-card:nth-child(4).is-visible{ animation-delay: 0.3s; }
+
+.steps .step-card:nth-child(1).is-visible{ animation-delay: 0s; }
+.steps .step-card:nth-child(2).is-visible{ animation-delay: 0.1s; }
+.steps .step-card:nth-child(3).is-visible{ animation-delay: 0.2s; }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
